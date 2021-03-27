@@ -1,7 +1,210 @@
-div  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height:
+html{
+    height: 100%;
+    min-height: 100%;
+}
+
+#google-logo {
+    grid-area: logo;
+    display: grid;
+    justify-self: center;
+    align-self:end;
+}
+
+#search-bar {
+    grid-area: bar;
+    font: 16px arial,sans-serif;
+    height: 40px;
+    width: 450px;
+    justify-self: center;
+    align-self: center;
+    border-radius: 20px;
+    border-color: rgba(163, 95, 95, 0.08); 
+    padding-left: 25px; 
+ 
+}
+#google-search-btn {
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    
     
 }
+
+#random-search-btn   {
+    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    
+}
+
+#sign-in {
+    border: 1px solid #4285f4;
+    font-weight: bold;
+    color: white;
+    outline: none;
+    background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+    border-radius: 2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: black;
+    text-decoration: none ;
+}
+
+#header{ 
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 50px 50px 80px;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "about store . gmail images apps sign-in";
+}
+
+#footer {
+    position: absolute;
+    bottom: 0%;
+    margin-left: -20px;
+    margin-right: +30px;
+    background: #f2f2f2;
+    line-height: 60px;
+    min-width: 101%;
+    display: grid;
+    grid-template-columns: 100px 100px 120px 1fr 50px 50px 50px;  
+    grid-template-areas: 
+    "advertising business how . privacy terms settings";
+
+}
+#about{
+    grid-area: about;
+    justify-self: center;
+    align-self: center;
+}
+#gmail{
+    grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+}
+#store{
+    grid-area: store;
+    justify-self: center;
+    align-self: center;
+}
+#images{
+    grid-area: images;
+    justify-self: center;
+    align-self: center;
+}
+#apps{
+    grid-area: apps;
+    justify-self: center;
+    align-self: center;
+}
+#sd{
+    grid-area: sign-in;
+    justify-self: center;
+    align-self: center;
+}
+
+#flexbox {
+    display: flexbox;
+    grid-area: flexbox;
+    justify-self: center;
+    align-content: flex-start;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 250px 100px 250px;
+    grid-template-areas: 
+    ". logo ."
+    ". bar ."
+    ". flexbox .";
+    
+}
+#advertising {
+    grid-area: advertising;
+    justify-self: center;
+    align-self: center;
+} 
+#business {
+    grid-area: business;
+    justify-self: center;
+    align-self: center;
+}
+
+#how  {
+    grid-area: how;
+    justify-self: center;
+    align-self: center;
+}
+#privacy {
+    grid-area: privacy;
+    justify-self: center;
+    align-self: center;
+}
+#terms {
+    grid-area: terms;
+    justify-self: center;
+    align-self: center;
+}
+#settings { 
+    grid-area:settings;
+    justify-self: center;
+    align-self: center;
+}
+label {
+    position: relative;
+  }
+  
+  label:before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 14px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
+  }
+  
+  label:after{
+    content: "";
+    background: url(https://web.archive.org/web/20191130234759im_/https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png) no-repeat center;
+    background-size: 21px 21px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 100%;
+    outline: none;
+    padding: 0;
+    pointer-events: auto;
+    position: absolute;
+    right: 16px;
+    width: 26px;
+    top:0;
+    bottom: 0;
