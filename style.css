@@ -14,12 +14,12 @@ html{
     grid-area: bar;
     font: 16px arial,sans-serif;
     height: 40px;
-    width: 450px;
+    width: 550px;
     justify-self: center;
     align-self: center;
     border-radius: 20px;
     border-color: rgba(163, 95, 95, 0.08); 
-    padding-left: 25px; 
+    
  
 }
 #google-search-btn {
@@ -64,10 +64,10 @@ html{
     outline: none;
     background: -webkit-linear-gradient(top,#4387fd,#4683ea);
     border-radius: 2px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 a {
@@ -94,7 +94,7 @@ a {
     line-height: 60px;
     min-width: 101%;
     display: grid;
-    grid-template-columns: 100px 100px 120px 1fr 50px 50px 50px;  
+    grid-template-columns: 100px 100px 120px 1fr 50px 50px 80px;  
     grid-template-areas: 
     "advertising business how . privacy terms settings";
 
