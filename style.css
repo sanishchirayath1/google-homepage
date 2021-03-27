@@ -17,10 +17,21 @@ html{
     width: 550px;
     justify-self: center;
     align-self: center;
-    border-radius: 20px;
-    border-color: rgba(163, 95, 95, 0.08); 
+    border-radius: 25px;
+    border-color: rgba(163, 95, 95, 0.08);
+    
     
  
+}
+#search-bar:hover{
+    
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 20%);
+    outline: none;
+    height: 40px;
+    -webkit-tap-highlight-color: transparent;
+
+    
+    
 }
 #google-search-btn {
     background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
@@ -39,6 +50,20 @@ html{
     
     
 }
+#google-search-btn:hover{
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+#random-search-btn:hover{
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
 
 #random-search-btn   {
     background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
@@ -72,9 +97,12 @@ html{
 
 a {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    color: black;
+    font-size: 14px;
+    color: rgb(12, 6, 6);
     text-decoration: none ;
+}
+a:hover {
+    
 }
 
 #header{ 
@@ -86,6 +114,7 @@ a {
 }
 
 #footer {
+
     position: absolute;
     bottom: 0%;
     margin-left: -20px;
@@ -189,12 +218,14 @@ label {
     top: 0;
     bottom: 0;
     width: 14px;
-    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 25 25' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
+    background: url("./search.svg");
+    background-size: 20px 20px;
+    padding-left: 5px;
   }
   
   label:after {
     content: "";
-    background: url(https://web.archive.org/web/20191130234759im_/https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png) no-repeat center;
+    background: url("./mic.png") no-repeat center;
     background-size: 21px 21px;
     border: none;
     border-radius: 2px;
