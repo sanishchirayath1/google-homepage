@@ -225,7 +225,7 @@ label {
     top: 0;
     bottom: 0;
     width: 14px;
-    background: url("./search.svg");
+    background: url("./search.svg") no-repeat center;
     background-size: 20px 20px;
     padding-left: 5px;
   }
